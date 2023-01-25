@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/ak.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/ak.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/ak.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/ak.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/ak.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/ak.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/ak.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/ak.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/ak.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ak.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/ak.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ak">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/ak">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ak">
+    <link rel="manifest" href="assets/ak    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/akpng">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/5135d630a7.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Particle.js CSS -->
+    <!-- <link rel="stylesheet" media="screen" href="js/particles.js-master/demo/css/style.css"> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Anshul Kumar</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="portfolio-navbar-container" class="container-fluid">
+        <header id="portfolio-navbar" class="d-flex flex-wrap py-3">
+            <a href="#">
+                <img id="navbar-logo" src="assets/images/ak.jpg" width="50" height="50" />
+                <!-- <span class="fs-4">Simple header</span> -->
+            </a>
+
+
+            <ul id="portfolio-navbar-pills" class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#portfolio-about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#portfolio-experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#portfolio-education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#portfolio-projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#portfolio-skills" class="nav-link">Skills</a></li>
+                <!-- <li class="nav-item"><a href="#portfolio-highlights" class="nav-link">Highlights</a></li> -->
+                <li class="nav-item"><a href="#portfolio-contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <ul id="portfolio-sidebar-toggle" class="nav nav-pills">
+                <button type="button" onclick="openSidebar()"
+                    class="portfolio-sidebar-toggle-button btn btn-outline-primary"><i class="fas fa-bars"></i></button>
+            </ul>
+
+
+        </header>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="portfolio-sidebar" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+        <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Sidebar</span>
+        </a> -->
+        <div style="display: flex; margin-left:auto;"><button type="button" onclick="closeSidebar()" class="btn-close btn-close-white"
+                aria-label="Close"></button></div>
+
+        <hr>
+        <ul style="flex-direction: column;" id="portfolio-sidebar-pills" class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#portfolio-about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#portfolio-experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#portfolio-education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#portfolio-projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#portfolio-skills" class="nav-link">Skills</a></li>
+            <!-- <li class="nav-item"><a href="#portfolio-highlights" class="nav-link">Highlights</a></li> -->
+            <li class="nav-item"><a href="#portfolio-contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- <hr>
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>mdo</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+        </div> -->
+    </div>
+
+    <!-- Hero -->
+    <!-- count particles -->
+    <!-- <div class="count-particles">
+        <span class="js-count-particles">--</span> particles
+    </div> -->
+
+    <!-- particles.js container -->
+    <div id="particles-js">
+        <div id="portfolio-hero" class="px-4 text-center">
+            <div id="portfolio-container">
+                <h1 class="portfolio-hero-highlight portfolio-hero-heading display-1 fw-bold">ANSHUL KUMAR</h1>
+                <div class="">
+                    <p class="portfolio-hero-highlight portfolio-hero-subheading lead mb-4">CSE Student || Freelance Web Developer
+                    </p>
+                    <div id="portfolio-hero-links">
+                        <a class="portfolio-hero-social-link" target="_blank" href="https://github.com/ianshulx"
+                            target="_blank"><i class="portfolio-hero-highlight fab fa-github"
+                                aria-hidden="true"></i></a>&nbsp;
+
+
+                        <a class="portfolio-hero-social-link" target="_blank"
+                            href="https://www.instagram.com/ianshulx/" target="_blank"><i
+                                class="portfolio-hero-highlight fab fa-instagram" aria-hidden="true"></i></a>&nbsp;
+
+
+
+
+
+
+
+                        <a class="portfolio-hero-social-link" target="_blank"
+                            href="https://www.linkedin.com/in/anshul-kumar-79289920b" target="_blank"><i
+                                class="portfolio-hero-highlight fab fa-linkedin" aria-hidden="true"></i></a>&nbsp;
+                       
+                        
+                        <a class="portfolio-hero-social-link" target="_blank" href="https://t.me/ianshulx"
+                            target="_blank"><i class="portfolio-hero-highlight fab fa-telegram"
+                                aria-hidden="true"></i></a>&nbsp;
+
+
+                        <a class="portfolio-hero-social-link" target="_blank"
+                            href="mailto:anshul8791official@gmail.com" target="_blank"><i
+                                class="portfolio-hero-highlight fas fa-envelope" aria-hidden="true"></i></a>&nbsp;
+                    </div>
+                    <div class=" gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" onclick="location.href='#portfolio-contact'"
+                            class="portfolio-hero-highlight portfolio-hero-button btn btn-primary btn-lg">Contact
+                            Me</button>
+                        <a type="button" style="webkit-appearance: none;" href="assets/anshulkumar's resume.pdf" target="_blank"></a>
+                           <a class="portfolio-hero-highlight portfolio-hero-button btn btn-outline-secondary btn-lg">See
+                            My Resume</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="portfolio-hero-down">
+                <span>
+                    <a href="#portfolio-about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                </span>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- scripts -->
+    <script src="js/particles.js-master/particles.js"></script>
+    <script src="js/particles.js-master/demo/js/app.js"></script>
+
+    <!-- stats.js -->
+    <!-- <script src="js/particles.js-master/demo/js/lib/stats.js"></script> -->
+
+    <!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+
+    <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function () {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
+
+
+
+
+
+
+
+
+    <!-- About -->
+    <div id="portfolio-about">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">About Me</h2>
+        <div class="container">
+            <div>
+                <div>
+                    <img style="height:auto;" alt="" width="180" height="180" id="portfolio-avatar"
+                        class="avatar avatar-user width-full border color-bg-primary"
+                        src="assets\images\anshul.jpg">
+                </div>
+                <div>
+                    <br>
+                    <h4>Hello Everyone! &#128075;</h4>
+
+                    <p>
+                        I am <b>Anshul Kumar</b><br>
+                        Currently an undergraduate at
+                        <a target="_blank" href="https://admission.eshancollege.com/"><b>Eshan College of Engineering(AKTU)</b></a><br>
+                         I love to explore how things actually work behind the scenes in softwares, web applications & other IT applications & Techs .<br>
+                        Always up for a conversation about new technologies and exciting projects.<br>
+                        Give me any Tech. Stack, I will get the work done.<br>
+                        Keep scrolling, we might end up having a mutual interest :)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+  <!-- Experience -->
+ <div id="portfolio-experience">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Work Experience</h2>
+        <div class="portfolio-timeline">
+            <!-- <div class="portfolio-experience-card right">
+                <div class="portfolio-experience-card-content" data-date="May 2019 – August 2019">
+                    <img class="company-img" src="assets/images/hc.jpg" width="100px" />
+                    <h3><a target="_blank" href="http://www.instagram.com/hackers.core">Hackers Core</a></h3>
+                    <h4>Founder & Technical Content Creator</h4>
+                    <p>
+                        <b>1. An Inflencing platform Where, I Create Content regarding Programming, Cyber Security, Web Development, Latest technologies
+                            </b><br>
+                        <b>2. Try to relate how core CSE Concepts are actually used and work internally in technologies
+                            and applications.</b><br>
+                        <b>3. Talk about how to build Real-Time Projects from Development to Deployment to Scaling.</b><br>
+                    </p>
+                </div>
+            </div> -->
+
+            <div class="portfolio-experience-card right">
+                <div class="portfolio-experience-card-content" data-date="May 2019 – August 2019">
+                    <img class="company-img" src="https://internship.thesparksfoundation.info/assests/img/logo.png" width="100px" />
+                    <h3><a target="_blank" href="https://internship.thesparksfoundation.info">The Spark Foundation</a></h3>
+                    <h4>Web developer internship</h4>
+                    <p>
+                        <b>1.It was a 1 month internship, In this internship I Created a web based application "Bank Management system"
+                            </b><br>
+                        <b>2.Bank Management system application simply perform transaction operations & shows transaction history. </b><br>
+                        
+                    </p>
+                </div>
+            </div>
+
+
+        </div> 
+        <br>
+        <br>
+        <!-- <h2 class="portfolio-heading">Organizations</h2>
+        <div class="portfolio-organizations container">
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="assets/images/codingnova.jpg" class="portfolio-education-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title"><a target="_blank" href="instagram.com/codingnova">Coding Nova</a> -
+                                Coding Club </h4>
+                            <h5 class="card-subtitle">Founder & Comitee member</h5>
+                            <h5 class="card-subtitle">2021 - Present</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>Founder at Coding Nova(A coding club which organinses hackathon, coding competions, & other type of tech contests)
+                                    </li>
+                                
+                                <li>Built Various Technical Projects like websites, portfolios, apps etc.</li>
+                            </ul>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <!-- Education -->
+    <div id="portfolio-education">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Education 👨‍🎓</h2>
+        <div class="container">
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="https://media.swipepages.com/2021/6/eshan-logo-redesign-750.png" class="portfolio-education-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title">Eshan College of Engineering</h4>
+                            <h5 class="card-subtitle">B.Tech(Computer Science Engineering)</h5>
+                            <h5 class="card-subtitle">2020 - 2024</h5>
+                            <p class="card-text">
+
+                            </p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="assets/images/srk.png" class="portfolio-education-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title">SRK College Firozabad</h4>
+                            <h5 class="card-subtitle">2018-2020</h5>
+
+
+                            <p class="card-text">
+                            <ul>
+                                <li>
+                                    <b>Class XII (U.P. Board) (62%) </b> 
+                                </li>
+                             
+                            </ul>
+                            </p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="assets/images/smk.jpg" class="portfolio-education-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title">SMPKD Sr. Secondary school </h4>
+                            
+                            <h5 class="card-subtitle">2016 - 2018</h5>
+                           
+                                <p class="card-text">
+                                    <ul>
+                                        <li>
+                                            <b>Class X (CBSE Board Exams) (65%) </b> 
+                                        </li>
+                                     
+                                    </ul>
+                                    </p>
+
+                          
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- Projects -->
+
+    <div id="portfolio-projects">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Projects 👨‍💻</h2>
+        <div class="container">
+           
+
+
+        
+
+            <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/images/esp.png" class="portfolio-project-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">Student Portal</h4>
+                            <h6 class="card-subtitle">A <b> Web App</b> for college student where they can access importan study resources
+                                .
+                            </h6>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+
+                                <li>✅ Web App built using  Django ,HTML, CSS & JavaScript .</li>
+                                <li>✅ advanced login system </li>
+                                <li>✅ Students can download notes & sylllabus .</li>
+                                <li>✅ Students can explore upcoming events in campus. </li>
+                                <li>✅ Students can practice quizes of competetive subjects.</li>
+                                <li>✅ Teaacher can add on notifications, notice & notes </li>
+                                <li>✅ Any student can views projects posted by other students and also can post theirs. </li>
+                                <li>✅ and many other features that can help students </li>
+
+                                
+
+                            </ul>
+                            </p>
+                            <p style="text-align: right;"><a target="_blank" style="color:black !important"
+                                    href="https://github.com/ianshulx/egiportal"><i
+                                        style="color:black !important" class="fab fa-github"></i> View on Github</a></p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/images/crud.png" class="portfolio-project-img img-fluid rounded-start"
+                                    alt="...">
+                            </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">Student Record CRUD project </h4>
+                            <h6 class="card-subtitle">A <b> Web App</b> This webapp is for Colleges where they can store A record of students. 
+                                Some main features are bellow. 
+                                .
+                            </h6>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+
+                                <li>✅ Web App built using  Django ,HTML, CSS & JavaScript .</li>
+                                <li>✅ advanced login system only staff can login </li>
+                                <li>✅ Admin staff can store any students record  .</li>
+                                <li>✅ All important Documents can be stored here. </li>
+                                <li>✅ Fee installments feature , staff will get notice of installments on the date .</li>
+  
+
+                                
+
+                            </ul>
+                            </p>
+                            <p style="text-align: right;"><a target="_blank" style="color:black !important"
+                                    href="https://github.com/ianshulx/Students-record-CRUD-project"><i
+                                        style="color:black !important" class="fab fa-github"></i> View on Github</a></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/images/pro.png" class="portfolio-project-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title"> Personal Portfolio</h4>
+                            <h6 class="card-subtitle">No need to descibe this project <b> Web App</b> You viewing it right now 😂😂😂.
+                                .
+                            </h6>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+
+                                <li>✅ Web App built using  HTML, CSS & JavaScript .</li>
+
+                            </ul>
+                            </p>
+                            <p style="text-align: right;"><a target="_blank" style="color:black !important"
+                                    href="https://github.com/ianshulx/ianshulx.github.io"><i
+                                        style="color:black !important" class="fab fa-github"></i> View on Github</a></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+  
+
+
+            
+   
+
+
+
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- Skills -->
+
+    <div id="portfolio-skills">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Skills</h2>
+        <div class="container">
+
+            <span class="portfolio-skill-badge badge bg-light text-dark">Web Development(Backend and Frontend)</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Problem Solving</span>
+ 
+            <span class="portfolio-skill-badge badge bg-light text-dark">Graphic Designing</span>
+
+               
+            
+
+  
+           
+           
+
+            <!-- <span class="portfolio-skill-badge badge bg-light text-dark">Social Media Management</span> -->
+        </div>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Programming Languages</h2>
+        <div class="container">
+            <span class="portfolio-skill-badge badge bg-light text-dark">Python <i class="fab fa-python"></i></span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">C <i class="fab fa-clang"></i></span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">C++ <i class="fab fa-clang"></i></span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">HTML & CSS <i class="fab fa-html"></i></span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">JavaScript (Beginner) <i class="fab fa-css"></i></span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">SQL <i class="fab fa-html"></i></span>
+           
+            
+        </div>
+
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Tools & Technologies</h2>
+        <div class="container">
+            <span class="portfolio-skill-badge badge bg-light text-dark">Django</span>
+            <!-- <span class="portfolio-skill-badge badge bg-light text-dark">NodeJS</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">ReactJS</span> -->
+            <span class="portfolio-skill-badge badge bg-light text-dark">Bootstrap</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Azure</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Linux</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Git & Github</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark"> Canva</span>
+     
+
+        </div>
+<br>
+<br>
+<h2 class="portfolio-heading">Spoken Languages</h2>
+<div class="container">
+    <span class="portfolio-skill-badge badge bg-light text-dark">Hindi (Regional) <i class="fas fa-om"></i></span>
+    <span class="portfolio-skill-badge badge bg-light text-dark">English - INDIA <i class="fab fa"></i></span>
+
+   
+    
+</div>
+
+<br>
+<h2 class="portfolio-heading">Hobbies & Extra Activities</h2>
+<div class="container">
+    <span class="portfolio-skill-badge badge bg-light text-dark">Chess <i class="fab fa-king"></i></span>
+    <span class="portfolio-skill-badge badge bg-light text-dark">Sudoku <i class="fab fa-numbers"></i></span>
+    <span class="portfolio-skill-badge badge bg-light text-dark">Solving logical puzzels <i class="fab fa-mind"></i></span>
+    <span class="portfolio-skill-badge badge bg-light text-dark">Cooking <i class="fab fa-html"></i></span>
+    <span class="portfolio-skill-badge badge bg-light text-dark">Writing Technical blogs <i class="fab fa-css"></i></span>
+   
+   
+    
+</div>
+
+
+
+
+     
+
+    <div id="portfolio-contact">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading" style="text-align: center;">Get In Touch</h2>
+        <div class="container">
+            <form action="https://formspree.io/f/myyowqaa" method="POST">
+                <div class="mb-3">
+                    <label for="portfolio-lead-email" class="form-label">
+                        Your email:</label>
+                    <input required type="email" class="form-control" id="portfolio-lead-email"
+                        aria-describedby="emailHelp" name="_replyto" placeholder="Your Email">
+
+                </div>
+                <div class="mb-3">
+                    <label for="portfolio-lead-message" class="form-label">
+                        Your message:</label>
+                    <textarea required rows="3" class="form-control" id="portfolio-lead-message" name="message"
+                        placeholder="Your Message"></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit">Send</button>
+                </div>
+
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div id="portfolio-footer" class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2021 Anshul Kumar
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <div id="portfolio-hero-up">
+                        <span>
+                            <a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-5 portfolio-footer-social">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://github.com/ianshulx" target="_blank"><i
+                                    class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/anshul-kumar-79289920b"
+                                target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://instagram.com/ianshulx" target="_blank"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://t.me/ianshulx/" target="_blank"><i
+                                    class="fa fa-telegram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="mailto:anshul8791official@gmail.com" target="_blank"><i
+                                    class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+
+    <!-- Float Button -->
+    <!-- <a href="#" id="portfolio-float" class="float">
+        <i id="portfolio-my-float" class="fas fa-arrow-up my-float"></i>
+    </a> -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
