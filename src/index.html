@@ -1,9 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+</head>
 <body>
+    <div class="wrapper">
+        <div class="intro">
+          <div class="profile">
+            <div class="photo">
+              <img src="https://cdn.pixabay.com/photo/2014/11/13/06/12/boy-529067_960_720.jpg">
+            </div>
+            <div class="bio">
+              <h1 class="name">Anshul Kumar</h1>
+              <p class="profession">Pre final Student || Microsoft Learn Student Ambassador || Aspiring Full-Stack Developer</p>
+            </div>
+          </div>
+          <div class="intro-section about">
+            <h1 class="title">about me</h1>
+            <p class="paragraph">
+                Currently an undergraduate at Eshan College of Engineering(AKTU)
+                I love to explore how things actually work behind the scenes in softwares, web applications & other IT applications & Techs .
+                Always up for a conversation about new technologies and exciting projects..
+            </p>
+          </div>
+          <div class="intro-section contact">
+            <h1 class="title">Contact</h1>
+            <div class="info-section">
+           <i> <ion-icon name="call-outline"></ion-icon> </i>
+              <span>+91 1234567890</span>
+            </div>
+            
+            <div class="info-section">
+               <i> <ion-icon name="mail-outline"></ion-icon> </i>
+              <span>anshul8791official@gmail.com</span>
+            </div>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    
 
+          </div>
+          <div class="intro-section follow">
+            <h1 class="title">Social</h1>
+            <div class="info-section link">
+                <i><ion-icon name="logo-github"></ion-icon></i>
+              <a target="_blank" rel="author" href="https://github.com/ianshulx">
+                <span>@ianshulx</span>
+              </a>
+            </div>
+ 
+            <div class="info-section link">
+                <i><ion-icon name="logo-linkedin"></ion-icon></i>
+              <a target="_blank" rel="author" href="https://www.linkedin.com/in/anshul-kumar-79289920b/">
+                <span>Anshul Kumar</span>
+              </a>
+            </div>
+            <div class="info-section link">
+                <i><ion-icon name="logo-instagram"></ion-icon></i>
+              <a target="_blank" rel="author" href="https://www.instagram.com/hackers.core/">
+                <span>Hackers Core</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="detail-section edu">
+            <div class="detail-title">
+              <div class="title-icon">
+                <i><ion-icon name="school-outline"></ion-icon></i>
+              </div>
+              <span>Eduation</span>
+            </div>
+            <div class="detail-content">
+    
+              <div class="timeline-block">
+                <h1>Eshan College of Engineering</h1>
+                <p>Dr. APJ Abdul Kalam Technical University, Lucknow</p>
+                <time>2020 - present</time>
+              </div>
+              <div class="timeline-block">
+                <h1>SRK Inter College, Firozabad </h1>
+                <p>UP board, Uttar Pradesh</p>
+                <time>2018 - 2020</time>
+              </div>
+
+              <div class="timeline-block">
+                <h1>SMPKD Sr. Sec. School, Firozabad</h1>
+                <p>CBSE board, Delhi</p>
+                <time>2016 - 2018</time>
+              </div>
+            </div>
+          </div>
+          <div class="detail-section pg-skill">
+            <div class="detail-title">
+              <div class="title-icon">
+                <i> <ion-icon name="code-slash-outline"></ion-icon> </i>
+              </div>
+              <span>Programming skills</span>
+            </div>
+            <div class="detail-content">
+              <ul class="pg-list">
+                <li>
+                  <span>HTML5</span>
+                  <div class="sb-skeleton">
+                    <div class="skillbar" style="--pgbar-length: 70%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>CSS3</span>
+                  <div class="sb-skeleton">
+                    <div class="skillbar" style="--pgbar-length: 60%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>Python</span>
+                  <div class="sb-skeleton">
+                    <div class="skillbar" style="--pgbar-length: 75%"></div>
+                  </div>
+                  </li>
+
+                <li>
+                  <span>JS</span>
+                  <div class="sb-skeleton">
+                    <div class="skillbar" style="--pgbar-length: 40%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>C++</span>
+                  <div class="sb-skeleton">
+                    <div class="skillbar" style="--pgbar-length: 60%"></div>
+                  </div>
+                </li>
+                <li>
+                    <span>C</span>
+                    <div class="sb-skeleton">
+                      <div class="skillbar" style="--pgbar-length: 68%"></div>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div class="detail-section tool-skill">
+            <div class="detail-title">
+              <div class="title-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <span>Developement Tools</span>
+            </div>
+            <div class="detail-content">
+              <ul class="tool-list">
+                <li>
+                  <svg viewbox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45"></circle>
+                    <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.9"></circle>
+                  </svg>
+                  <span class="tl-name">Canva</span>
+                  <span class="tl-exp">90%</span>
+                </li>
+                <li>
+                  <svg viewbox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45"></circle>
+                    <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.7"></circle>
+                  </svg>
+                  <span class="tl-name">VS Code</span>
+                  <span class="tl-exp">70%</span>
+                </li>
+                <li>
+                  <svg viewbox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45"></circle>
+                    <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.75"></circle>
+                  </svg>
+                  <span class="tl-name">GitHub</span>
+                  <span class="tl-exp">75%</span>
+                </li>
+                <li>
+                  <svg viewbox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45"></circle>
+                    <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.75"></circle>
+                  </svg>
+                  <span class="tl-name">Django</span>
+                  <span class="tl-exp">75%</span>
+                </li>
+
+              </ul>
+              <ul class="tool-list">
+                <li>
+                    <svg viewbox="0 0 100 100">
+                      <circle cx="50" cy="50" r="45"></circle>
+                      <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.65"></circle>
+                    </svg>
+                    <span class="tl-name">Bootstrap</span>
+                    <span class="tl-exp">65%</span>
+                  </li>
+
+
+              </ul>
+            </div>
+      
+          </div>
+          <div class="detail-section interests">
+            <div class="detail-title">
+              <div class="title-icon">
+                <i><ion-icon name="heart-outline"></ion-icon></i>
+              </div>
+              <span>Interests</span>
+            </div>
+            <div class="detail-content">
+              <div class="outer-frame">
+                <ul class="favor-list">
+                  <li>
+                    <i><ion-icon name="wine-outline"></ion-icon></i>
+                    <span>Chess</span>
+                  </li>
+
+                  <li>
+                    <i><ion-icon name="extension-puzzle-outline"></ion-icon></i>
+                    <span>Solving Puzzles</span>
+                  </li>
+                  <li>
+                    <i><ion-icon name="headset-outline"></ion-icon></i>
+                    <span>Music</span>
+
+                  <li>
+                    <i><ion-icon name="book-outline"></ion-icon></i>
+                    <span>Self-learning</span>
+                  </li>
+                  <li>
+                    <i><ion-icon name="logo-instagram"></ion-icon></i>
+                    <span>Content Creating</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
 </body>
 </html>
